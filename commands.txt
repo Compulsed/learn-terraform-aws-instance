@@ -1,0 +1,4 @@
+terraform apply -var="region=us-east-1"
+terraform apply -var-file="sensitive.tfvars"
+
+# terraform.tfvars is a special name 
