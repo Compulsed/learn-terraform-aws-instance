@@ -8,7 +8,6 @@ terraform {
 }
 
 provider "aws" {
-  profile = "dale-playground"
   region  = "us-east-1"
 }
 
