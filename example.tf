@@ -9,7 +9,7 @@ terraform {
 
 provider "aws" {
   profile = "dale-playground"
-  region  = var.region
+  region  = "us-east-1"
 }
 
 resource "aws_instance" "example" {
