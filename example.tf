@@ -25,12 +25,6 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
 }
 
-resource "aws_instance" "example1" {
-  ami           = "ami-0be2609ba883822ec"
-  instance_type = "t2.micro"
-}
-
-
 resource "aws_eip" "ip" {
   vpc      = true
   instance = aws_instance.example.id
