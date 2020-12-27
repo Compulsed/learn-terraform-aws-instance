@@ -33,3 +33,13 @@ provider "aws" {
 # output "ip" {
 #   value = aws_eip.ip.public_ip
 # }
+
+resource "aws_s3_bucket" "dalesalter-memes-tf-bucket" {
+  bucket = "dalesalter-memes-tf-bucket"
+  acl    = "private"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
