@@ -44,14 +44,14 @@ resource "aws_s3_bucket" "dalesalter-memes-tf-bucket" {
   }
 }
 
-resource "aws_rds_cluster" "default" {
-  cluster_identifier      = "aurora-cluster-demo"
-  engine                  = "aurora-postgresql"
-  engine_mode             = "serverless"
-  availability_zones      = ["us-east-1a", "us-east-1b", "us-east-1c"]
-  database_name           = "mydb"
-  master_username         = "foofoofoo"
-  master_password         = "foofoofoo"
-  backup_retention_period = 5
-  preferred_backup_window = "07:00-09:00"
-}
+# resource "aws_rds_cluster" "default" {
+#   cluster_identifier      = "aurora-cluster-demo"
+#   engine                  = "aurora-postgresql"
+#   engine_mode             = "serverless"
+#   availability_zones      = ["us-east-1a", "us-east-1b", "us-east-1c"]
+#   database_name           = "mydb"
+#   master_username         = "foofoofoo"
+#   master_password         = "foofoofoo"
+#   backup_retention_period = 5
+#   preferred_backup_window = "07:00-09:00"
+# }
