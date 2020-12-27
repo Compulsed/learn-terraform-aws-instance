@@ -1,4 +1,12 @@
 terraform {
+  backend "remote" {
+    organization = "dalesalter"
+
+    workspaces {
+      name = "learn-terraform-aws-instance"
+    }
+  }
+  
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -8,6 +16,7 @@ terraform {
 }
 
 provider "aws" {
+  profile = "dale-playground"
   region  = "us-east-1"
 }
 
